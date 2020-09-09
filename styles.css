@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-size: cover;
+  max-height: 100%;
+  max-width: 100%;
+  background-color: #004eac;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+  z-index: -1;
+}
+
+.bg-primary {
+  background-color: #003676 !important;
+}
+
+.card {
+  background: transparent;
+  color: #fff;
+  text-align: center;
+  flex-grow: 1;
+  font-size: 18px;
+  opacity: 75%;
+  border: 2px solid;
+  box-shadow: 2px 2px 2px 2px #004eac;
+}
+
+.card-title {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+/* ---- stats.js ---- */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: Black;
+  background-image: url("");
+  background-repeat: round;
+  background-size: auto 100%;
+  background-position: 50% 50%;
+  overflow: hidden;
+}
+
+/* ---- stats.js ---- */
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats, .count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+  z-index: 100;
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+
+span {
+  font-style: italic;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Floating Social Media Bar Style Starts Here */
+.fl-fl {
+  background: #003676;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 4px;
+  width: 205px;
+  position: fixed;
+  right: -160px;
+  z-index: 1000;
+  font: normal normal 10px Arial;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.fa {
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 0;
+  width: 40px;
+  margin-left: 8px;
+}
+
+.fl-fl:hover {
+  right: 0;
+}
+
+.fl-fl a {
+  color: #fff !important;
+  text-decoration: none;
+  text-align: center;
+  line-height: 43px !important;
+  vertical-align: top !important;
+}
+
+.float-fb {
+  top: 160px;
+}
+
+.float-tw {
+  top: 215px;
+}
+
+.float-gp {
+  top: 270px;
+}
+
+.float-rs {
+  top: 325px;
+}
+
+.float-ig {
+  top: 380px;
+}
+
+.float-pn {
+  top: 435px;
+}
+
+/* Back-to-Top Button */
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
+}
+
+#myBtn {
+  position: absolute;
+	width: 50px;
+	height: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+	cursor: pointer;
+	background-color: #5de6de;
+	background-image: linear-gradient(315deg, #5de6de 0%, #003676 74%);
+	border: none;
+	border-radius: 50%;
+	transition: 200ms;
+}
+
+#myBtn svg {
+	fill: white;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+#myBtn button:before {
+	position: absolute;
+	transform: translateX(-50%) translateY(45px);
+	font-size: 10px;
+	transition: 200ms;
+	color: transparent;
+	font-weight: bold;
+}
+
+#myBtn button:hover {
+	box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+	width: 50px;
+	height: 50px;
+}
+
+#myBtn button:hover::before {
+	color: #fff;
+}
+
+#myBtn button:hover svg {
+		animation: bounce 2s infinite linear;
+}
+
+#myBtn button:focus {
+	outline: none;
+}
+
+@keyframes bounce {
+	0% {transform: translateX(-50%) translateY(-50%)}
+	25% {transform: translateX(-50%) translateY(-65%)}
+	50% {transform: translateX(-50%) translateY(-50%)}
+	75% {transform: translateX(-50%) translateY(-35%)}
+	100% {transform: translateX(-50%) translateY(-50%)}
+}
